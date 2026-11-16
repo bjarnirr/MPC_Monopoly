@@ -8,17 +8,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Check out this repo
+        uses: actions/checkout@v4
+
+      - name: Check out the MPC SDK
+        uses: actions/checkout@v4
+        with:
+          repository: inmusic-software/mpc-plugin-builder-sdk
+          ref: main
+          path: sdk
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build ARM32 + ARM64 and validate
+
+      - name: Copy plugin into SDK
         run: |
-          python tools/build.py plugins/MonoPoly
-          python tools/validate.py plugins/MonoPoly
-      - name: Show result
-        run: find plugins/MonoPoly/build -type f | sort
-      - uses: actions/upload-artifact@v4
+          mkdir -p sdk/plugins/MonoPoly
+          cp plugins/MonoPoly/plugin.json sdk/plugins/MonoPoly/
+          cp -R plugins/MonoPoly/src sdk/plugins/MonoPoly/
+          cp plugins/MonoPoly/ui.json sdk/plugins/MonoPoly/
+
+      - name: Build and validate
+        run: python3 sdk/tools/build.py sdk/plugins/MonoPoly
+
+      - name: Upload the MPC plugin
+        uses: actions/upload-artifact@v4
         with:
           name: MonoPoly-for-MPC
-          path: plugins/MonoPoly/build/MonoPoly Project - VST - MonoPoly
+          path: sdk/plugins/MonoPoly/build/MonoPoly Project - VST - MonoPoly

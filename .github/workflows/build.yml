@@ -39,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: MonoPoly-for-MPC
-          path: sdk/plugins/MonoPoly/build/MonoPoly Project - VST - MonoPoly
+          path: sdk/plugins/MonoPoly/build/HolyPoly - VST - HolyPoly

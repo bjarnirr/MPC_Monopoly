@@ -91,14 +91,30 @@ public:
         };
 
         preset("Init", {});
-        preset("Holy Bass", {{kVoiceMode, 0}, {kCutoff, 850}, {kReso, 38}, {kFEnvAmt, 70}, {kFA, 2}, {kFD, 180}, {kAA, 2}, {kAD, 220}, {kAS, 65}, {kAR, 130}, {kL1, 90}, {kL2, 70}, {kO2, -1}, {kT2, 8}});
-        preset("Poly Brass", {{kVoiceMode, 2}, {kCutoff, 2400}, {kReso, 26}, {kFEnvAmt, 55}, {kFA, 8}, {kFD, 190}, {kAA, 6}, {kAD, 260}, {kAS, 52}, {kAR, 420}, {kL1, 82}, {kL2, 68}, {kL3, 74}, {kL4, 52}, {kT1, 6}, {kT2, 3}});
-        preset("Analog Pad", {{kVoiceMode, 4}, {kCutoff, 1200}, {kReso, 18}, {kFEnvAmt, 52}, {kFA, 18}, {kFD, 420}, {kAS, 88}, {kAR, 580}, {kL1, 72}, {kL2, 60}, {kL3, 58}, {kL4, 62}, {kMG1Rate, 0.9f}, {kPitchMod, 28}});
-        preset("PWM Sweep", {{kVoiceMode, 2}, {kW1, 3}, {kW2, 3}, {kW3, 3}, {kW4, 3}, {kPWMMod, 55}, {kMG2Rate, 0.35f}, {kCutoff, 5000}, {kAS, 90}, {kAR, 900}});
-        preset("Chime Lead", {{kVoiceMode, 1}, {kCutoff, 3600}, {kReso, 12}, {kFEnvAmt, 68}, {kFA, 2}, {kFD, 120}, {kAA, 2}, {kAD, 160}, {kAS, 28}, {kAR, 240}, {kW1, 0}, {kT1, 8}, {kL1, 86}, {kPW1, 56}});
-        preset("Low Drones", {{kVoiceMode, 4}, {kCutoff, 480}, {kReso, 42}, {kFEnvAmt, 84}, {kFA, 20}, {kFD, 600}, {kAS, 72}, {kAR, 700}, {kL1, 75}, {kL2, 66}, {kL3, 60}, {kL4, 58}, {kNoise, 20}, {kMaster, 58}});
-        preset("Mellow Choir", {{kVoiceMode, 4}, {kCutoff, 1700}, {kReso, 20}, {kFEnvAmt, 35}, {kFA, 12}, {kFD, 300}, {kAS, 82}, {kAR, 520}, {kL1, 78}, {kL2, 70}, {kL3, 60}, {kL4, 55}, {kMG1Rate, 0.6f}, {kPitchMod, 18}});
-        preset("Mono Hero", {{kVoiceMode, 0}, {kCutoff, 2200}, {kReso, 30}, {kFEnvAmt, 80}, {kFA, 3}, {kFD, 150}, {kAA, 2}, {kAD, 150}, {kAS, 45}, {kAR, 220}, {kL1, 92}, {kO1, 0}, {kT1, 12}, {kW1, 1}, {kPWMMod, 32}});
+        preset("Holy Bass", {{kVoiceMode,0},{kCutoff,850},{kReso,38},{kFEnvAmt,70},{kFA,2},{kFD,180},{kAA,2},{kAD,220},{kAS,65},{kAR,130},{kL1,90},{kL2,70},{kO2,-1},{kT2,8}});
+        preset("Poly Brass", {{kVoiceMode,2},{kCutoff,2400},{kReso,26},{kFEnvAmt,55},{kFA,8},{kFD,190},{kAA,6},{kAD,260},{kAS,52},{kAR,420},{kL1,82},{kL2,68},{kL3,74},{kL4,52},{kT1,6},{kT2,3}});
+        preset("Analog Pad", {{kVoiceMode,4},{kCutoff,1200},{kReso,18},{kFEnvAmt,52},{kFA,18},{kFD,420},{kAS,88},{kAR,580},{kL1,72},{kL2,60},{kL3,58},{kL4,62},{kMG1Rate,0.9f},{kPitchMod,28}});
+        preset("PWM Sweep", {{kVoiceMode,2},{kW1,3},{kW2,3},{kW3,3},{kW4,3},{kPWMMod,55},{kMG2Rate,0.35f},{kCutoff,5000},{kAS,90},{kAR,900}});
+        preset("Chime Lead", {{kVoiceMode,1},{kCutoff,3600},{kReso,12},{kFEnvAmt,68},{kFA,2},{kFD,120},{kAA,2},{kAD,160},{kAS,28},{kAR,240},{kW1,0},{kT1,8},{kL1,86},{kPW1,56}});
+        preset("Low Drones", {{kVoiceMode,4},{kCutoff,480},{kReso,42},{kFEnvAmt,84},{kFA,20},{kFD,600},{kAS,72},{kAR,700},{kL1,75},{kL2,66},{kL3,60},{kL4,58},{kNoise,20},{kMaster,58}});
+        preset("Mellow Choir", {{kVoiceMode,4},{kCutoff,1700},{kReso,20},{kFEnvAmt,35},{kFA,12},{kFD,300},{kAS,82},{kAR,520},{kL1,78},{kL2,70},{kL3,60},{kL4,55},{kMG1Rate,0.6f},{kPitchMod,18}});
+        preset("Mono Hero", {{kVoiceMode,0},{kCutoff,2200},{kReso,30},{kFEnvAmt,80},{kFA,3},{kFD,150},{kAA,2},{kAD,150},{kAS,45},{kAR,220},{kL1,92},{kO1,0},{kT1,12},{kW1,1},{kPWMMod,32}});
+
+        preset("Glass Pluck", {{kVoiceMode,1},{kW1,0},{kW2,3},{kW3,1},{kCutoff,4200},{kReso,48},{kFEnvAmt,72},{kFA,1},{kFD,90},{kFS,15},{kFR,180},{kAA,2},{kAD,280},{kAS,30},{kAR,260},{kT2,7},{kPitchMod,12}});
+        preset("Rubber Sequence", {{kVoiceMode,0},{kW1,2},{kW2,1},{kO2,-1},{kT2,-5},{kCutoff,620},{kReso,62},{kFEnvAmt,82},{kFA,2},{kFD,140},{kFS,8},{kFR,120},{kAA,2},{kAD,180},{kAS,45},{kAR,110},{kFilterMod,46},{kMG1Shape,3},{kMG1Rate,8.0f}});
+        preset("Soft Organ", {{kVoiceMode,4},{kW1,0},{kW2,1},{kW3,0},{kW4,1},{kO1,0},{kO2,0},{kO3,-1},{kT2,12},{kCutoff,2800},{kReso,14},{kFEnvAmt,20},{kFA,12},{kFD,220},{kFS,70},{kFR,400},{kAA,8},{kAD,200},{kAS,82},{kAR,350},{kL1,90},{kL2,52},{kL3,70},{kL4,40}});
+        preset("Dark Arp", {{kVoiceMode,1},{kW1,1},{kW2,2},{kO2,-1},{kCutoff,780},{kReso,54},{kFEnvAmt,78},{kFA,4},{kFD,220},{kFS,10},{kFR,260},{kAA,2},{kAD,140},{kAS,40},{kAR,180},{kL1,88},{kL2,64},{kFilterMod,58},{kMG2Shape,2},{kMG2Rate,2.5f}});
+        preset("Lunar Bell", {{kVoiceMode,2},{kW1,0},{kW2,0},{kW3,1},{kT1,12},{kT2,-12},{kT3,19},{kCutoff,5600},{kReso,32},{kFEnvAmt,36},{kFA,8},{kFD,520},{kFS,0},{kFR,900},{kAA,3},{kAD,920},{kAS,18},{kAR,1100},{kL1,82},{kL2,48},{kL3,36},{kMG1Shape,0},{kMG1Rate,0.28f},{kPitchMod,22}});
+        preset("Electric Keys", {{kVoiceMode,2},{kW1,1},{kW2,3},{kO2,0},{kCutoff,3000},{kReso,28},{kFEnvAmt,65},{kFA,3},{kFD,480},{kFS,18},{kFR,520},{kAA,2},{kAD,640},{kAS,46},{kAR,500},{kL1,76},{kL2,58},{kL3,36},{kT2,-7},{kKeyTrack,62}});
+        preset("Warm Stack", {{kVoiceMode,4},{kW1,1},{kW2,1},{kW3,0},{kO2,-1},{kO3,-1},{kT1,-5},{kT2,5},{kT3,7},{kCutoff,2100},{kReso,22},{kFEnvAmt,44},{kFA,20},{kFD,350},{kFS,72},{kFR,650},{kAA,12},{kAD,260},{kAS,86},{kAR,720},{kL1,82},{kL2,70},{kL3,55},{kL4,48},{kMG1Shape,1},{kMG1Rate,0.18f},{kPitchMod,8}});
+        preset("Sub Current", {{kVoiceMode,0},{kW1,1},{kW2,1},{kO1,-1},{kO2,-1},{kT2,-1},{kCutoff,260},{kReso,72},{kFEnvAmt,90},{kFA,5},{kFD,300},{kFS,24},{kFR,220},{kAA,4},{kAD,380},{kAS,70},{kAR,260},{kL1,100},{kL2,48},{kNoise,8},{kMaster,82}});
+        preset("Silver Lead", {{kVoiceMode,0},{kW1,1},{kW2,2},{kT1,5},{kT2,-5},{kCutoff,3900},{kReso,38},{kFEnvAmt,74},{kFA,2},{kFD,180},{kFS,12},{kFR,300},{kAA,3},{kAD,260},{kAS,70},{kAR,300},{kL1,88},{kL2,64},{kPWMMod,42},{kMG2Shape,0},{kMG2Rate,4.8f},{kPitchMod,6}});
+        preset("Cloud Choir", {{kVoiceMode,4},{kW1,0},{kW2,0},{kW3,1},{kW4,2},{kCutoff,1550},{kReso,16},{kFEnvAmt,28},{kFA,45},{kFD,700},{kFS,82},{kFR,1400},{kAA,40},{kAD,500},{kAS,92},{kAR,1500},{kL1,68},{kL2,62},{kL3,52},{kL4,44},{kMG1Shape,0},{kMG1Rate,0.11f},{kPitchMod,24},{kMaster,62}});
+        preset("Neon Pluck", {{kVoiceMode,1},{kW1,3},{kW2,3},{kT1,12},{kT2,-12},{kCutoff,6800},{kReso,44},{kFEnvAmt,88},{kFA,1},{kFD,70},{kFS,5},{kFR,150},{kAA,1},{kAD,170},{kAS,22},{kAR,150},{kL1,86},{kL2,54},{kPWMMod,68},{kMG2Rate,0.8f}});
+        preset("Fifth Space", {{kVoiceMode,4},{kW1,1},{kW2,1},{kW3,2},{kW4,0},{kO2,0},{kO3,0},{kT1,-7},{kT2,7},{kT3,-12},{kCutoff,980},{kReso,30},{kFEnvAmt,42},{kFA,65},{kFD,950},{kFS,68},{kFR,1800},{kAA,50},{kAD,800},{kAS,76},{kAR,1800},{kL1,72},{kL2,58},{kL3,48},{kL4,42},{kMG1Shape,1},{kMG1Rate,0.22f},{kPitchMod,16},{kMaster,64}});
+        preset("Tape Pulse", {{kVoiceMode,2},{kW1,2},{kW2,1},{kW3,3},{kT2,-5},{kCutoff,3400},{kReso,24},{kFEnvAmt,50},{kFA,10},{kFD,260},{kFS,26},{kFR,380},{kAA,8},{kAD,310},{kAS,64},{kAR,420},{kL1,74},{kL2,62},{kL3,48},{kL4,36},{kNoise,12},{kMG2Shape,3},{kMG2Rate,1.2f},{kPWMMod,24},{kFilterMod,18}});
+        preset("Metro Bass", {{kVoiceMode,0},{kW1,2},{kW2,1},{kO2,-1},{kT2,3},{kPW1,28},{kPW2,64},{kCutoff,720},{kReso,58},{kFEnvAmt,92},{kFA,2},{kFD,200},{kFS,12},{kFR,160},{kAA,2},{kAD,260},{kAS,56},{kAR,140},{kL1,92},{kL2,66},{kFilterMod,42},{kMG1Shape,3},{kMG1Rate,6.0f}});
+        preset("Velvet Pad", {{kVoiceMode,4},{kW1,0},{kW2,1},{kW3,0},{kW4,1},{kT1,-4},{kT2,4},{kT3,-9},{kT4,9},{kCutoff,1320},{kReso,20},{kFEnvAmt,38},{kFA,55},{kFD,850},{kFS,78},{kFR,1600},{kAA,48},{kAD,700},{kAS,88},{kAR,1500},{kL1,70},{kL2,64},{kL3,58},{kL4,52},{kMG1Shape,0},{kMG1Rate,0.14f},{kPitchMod,12},{kMaster,68}});
     }
 
     void prepare(double sr, int) override { engine_.prepare(sr); }
@@ -107,8 +123,7 @@ public:
     void process(mpc::ProcessContext& ctx) override
     {
         monopoly::Parameters p;
-        p.voiceMode = getInt(kVoiceMode) == 0 ? monopoly::VoiceMode::Mono :
-                      (getInt(kVoiceMode) == 1 ? monopoly::VoiceMode::Two : monopoly::VoiceMode::Four);
+        p.voiceMode = getInt(kVoiceMode) == 0 ? monopoly::VoiceMode::Mono : (getInt(kVoiceMode) == 1 ? monopoly::VoiceMode::Two : monopoly::VoiceMode::Four);
         for (int n = 0; n < 4; ++n) {
             const int base = 1 + n * 5;
             p.osc[n].waveform = static_cast<monopoly::Waveform>(std::max(0, std::min(3, getInt(base))));
@@ -155,3 +170,5 @@ private:
 };
 
 MPC_PLUGIN_ENTRY(MonoPolyPlugin)
+
+// Source remains original: all patches above are independently designed for HolyPoly.

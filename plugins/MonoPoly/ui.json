@@ -19,11 +19,11 @@
         { "param": "Noise", "widget": "fader" },
         { "param": "Master", "widget": "fader" },
         "empty",
-        { "widget": "text", "text": "MONOPOLY" }
+        { "widget": "text", "text": "HOLYPOLY" }
       ]
     },
     {
-      "name": "OSC 1",
+      "name": "VCO 1",
       "controls": [
         { "param": "VCO1 Wave", "widget": "switch" },
         { "param": "VCO1 Oct", "widget": "knob" },
@@ -33,18 +33,12 @@
         { "param": "PWM Mod", "widget": "knob" },
         { "param": "Pitch Mod", "widget": "knob" },
         { "param": "MG1 Shape", "widget": "switch" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "VCO 1 / CONTROL" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty",
+        { "widget": "text", "text": "VCO 1" }
       ]
     },
     {
-      "name": "OSC 2",
+      "name": "VCO 2",
       "controls": [
         { "param": "VCO2 Wave", "widget": "switch" },
         { "param": "VCO2 Oct", "widget": "knob" },
@@ -54,18 +48,12 @@
         { "param": "PWM Mod", "widget": "knob" },
         { "param": "Pitch Mod", "widget": "knob" },
         { "param": "MG1 Shape", "widget": "switch" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "VCO 2 / CONTROL" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty",
+        { "widget": "text", "text": "VCO 2" }
       ]
     },
     {
-      "name": "OSC 3",
+      "name": "VCO 3",
       "controls": [
         { "param": "VCO3 Wave", "widget": "switch" },
         { "param": "VCO3 Oct", "widget": "knob" },
@@ -75,18 +63,12 @@
         { "param": "PWM Mod", "widget": "knob" },
         { "param": "Pitch Mod", "widget": "knob" },
         { "param": "MG2 Shape", "widget": "switch" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "VCO 3 / CONTROL" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty",
+        { "widget": "text", "text": "VCO 3" }
       ]
     },
     {
-      "name": "OSC 4",
+      "name": "VCO 4",
       "controls": [
         { "param": "VCO4 Wave", "widget": "switch" },
         { "param": "VCO4 Oct", "widget": "knob" },
@@ -96,35 +78,8 @@
         { "param": "PWM Mod", "widget": "knob" },
         { "param": "Pitch Mod", "widget": "knob" },
         { "param": "MG2 Shape", "widget": "switch" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "VCO 4 / CONTROL" }
-      ]
-    },
-    {
-      "name": "MIX",
-      "controls": [
-        { "param": "VCO1 Level", "widget": "fader" },
-        { "param": "VCO2 Level", "widget": "fader" },
-        { "param": "VCO3 Level", "widget": "fader" },
-        { "param": "VCO4 Level", "widget": "fader" },
-        { "param": "Noise", "widget": "fader" },
-        { "param": "Master", "widget": "fader" },
-        { "param": "Voice Mode", "widget": "switch" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "MIXER / OUTPUT" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty",
+        { "widget": "text", "text": "VCO 4" }
       ]
     },
     {
@@ -134,18 +89,12 @@
         { "param": "Resonance", "widget": "knob" },
         { "param": "VCF Env", "widget": "knob" },
         { "param": "Key Track", "widget": "knob" },
+        { "param": "Filter Mod", "widget": "knob" },
         { "param": "VCF Attack", "widget": "fader" },
         { "param": "VCF Decay", "widget": "fader" },
         { "param": "VCF Sustain", "widget": "fader" },
         { "param": "VCF Release", "widget": "fader" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "FILTER / VCF ENV" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty"
       ]
     },
     {
@@ -159,14 +108,7 @@
         { "param": "VCF Decay", "widget": "fader" },
         { "param": "VCF Sustain", "widget": "fader" },
         { "param": "VCF Release", "widget": "fader" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "AMP / FILTER ENV" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"
       ]
     },
     {
@@ -174,27 +116,33 @@
       "controls": [
         { "param": "MG1 Shape", "widget": "switch" },
         { "param": "MG1 Rate", "widget": "knob" },
-        { "param": "Pitch Mod", "widget": "knob" },
-        { "param": "PWM Mod", "widget": "knob" },
         { "param": "MG2 Shape", "widget": "switch" },
         { "param": "MG2 Rate", "widget": "knob" },
+        { "param": "Pitch Mod", "widget": "knob" },
         { "param": "Filter Mod", "widget": "knob" },
+        { "param": "PWM Mod", "widget": "knob" },
         { "param": "Voice Mode", "widget": "switch" },
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        "empty",
-        { "widget": "text", "text": "MG 1-2 / MOD" }
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"
+      ]
+    },
+    {
+      "name": "OUTPUT",
+      "controls": [
+        { "param": "VCO1 Level", "widget": "fader" },
+        { "param": "VCO2 Level", "widget": "fader" },
+        { "param": "VCO3 Level", "widget": "fader" },
+        { "param": "VCO4 Level", "widget": "fader" },
+        { "param": "Noise", "widget": "fader" },
+        { "param": "Master", "widget": "fader" },
+        { "param": "Voice Mode", "widget": "switch" },
+        "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"
       ]
     }
   ],
   "style": {
-    "background": "ff1d1d1b",
-    "accent": "ffb87528",
-    "text": "fff4edd8",
-    "muted": "ffa7a392"
+    "background": "ff18283c",
+    "accent": "ffc6a16d",
+    "text": "fff2eddd",
+    "muted": "ffaaa99e"
   }
 }
